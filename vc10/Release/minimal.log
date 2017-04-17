@@ -1,4 +1,4 @@
-﻿生成启动时间为 2017/4/16 15:06:05。
+﻿生成启动时间为 2017/4/17 21:08:24。
      1>项目“E:\人脸对齐文献\stasm+LDOF\vc10\minimal.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IE:/OpenCV2.4.0/build/include /I../stasm /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\apps\minimal.cpp ..\stasm\asm.cpp ..\stasm\classicdesc.cpp ..\stasm\convshape.cpp ..\stasm\err.cpp ..\stasm\eyedet.cpp ..\stasm\eyedist.cpp ..\stasm\faceroi.cpp ..\stasm\hat.cpp ..\stasm\hatdesc.cpp ..\stasm\landmarks.cpp ..\stasm\misc.cpp ..\stasm\MOD_1\facedet.cpp ..\stasm\MOD_1\initasm.cpp ..\stasm\pinstart.cpp ..\stasm\print.cpp ..\stasm\shape17.cpp ..\stasm\shapehacks.cpp ..\stasm\shapemod.cpp ..\stasm\startshape.cpp ..\stasm\stasm.cpp ..\stasm\stasm_lib.cpp
@@ -62,4 +62,4 @@
 
 生成成功。
 
-已用时间 00:00:40.23
+已用时间 00:00:34.66

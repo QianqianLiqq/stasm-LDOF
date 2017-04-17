@@ -29,7 +29,6 @@ int main()
 	capture.read(frame);
 	bool pause = false;
 
-	cv::Rect faceboxKCF;//人脸跟踪的结果
 	int foundface;
 	float landmarks[2 * stasm_NLANDMARKS]; // x,y coords (note the 2)
 	static const char* const path = "../data/testface.png";
@@ -106,88 +105,3 @@ int main()
 
 	return 0;
 }
-
-//if (flagA == false)
-//{
-//	frame.copyTo(preFrame);
-//	flagA = true;
-//}
-//else
-//{
-//	vector<Point2f> pIn;
-//	vector<Point2f> pOut;
-//	pIn.push_back(Point(cvRound(landmarks[2 * 38]), cvRound(landmarks[2 * 38 + 1])));
-//	pIn.push_back(Point(cvRound(landmarks[2 * 39]), cvRound(landmarks[2 * 39 + 1])));
-//	pIn.push_back(Point(cvRound(landmarks[2 * 59]), cvRound(landmarks[2 * 59 + 1])));
-//	pIn.push_back(Point(cvRound(landmarks[2 * 65]), cvRound(landmarks[2 * 65 + 1])));
-//	pIn.push_back(Point(cvRound(landmarks[2 * 62]), cvRound(landmarks[2 * 62 + 1])));
-//	pIn.push_back(Point(cvRound(landmarks[2 * 74]), cvRound(landmarks[2 * 74 + 1])));
-//	opticalFlow* opt = new opticalFlow();
-//	opt->set(preFrame, frame);
-//	opt->setR(10);
-//	opt->computeOpticalFlow(pIn, pOut);
-//	for (int t = 0; t < pOut.size(); t++)
-//		circle(displayImage, pOut[t], 1, cv::Scalar(0, 0, 255), 2);
-//	/*Mat color;
-//	opt->disPlayFlow(color);
-//	imshow("opt", color);
-//	waitKey(0);*/
-//	Mat preFrame(frame);
-
-
-//faceBox = facial.getFacePosition(frame);	//检测加跟踪的结果
-////faceboxKCF = facial.getFacePosKCF(frame);	//人脸跟踪的结果  这两句的位置不能变
-//Rect face = faceBox;
-
-//if (facial.getFaceDetectSuccess() == 1)  //正常驾驶状态下的人脸  
-//{
-//    //特征点检测
-//	
-//		stasm_search_single(&foundface, landmarks,
-//			(const char*)img.data, img.cols, img.rows, path, "../data");
-
-//		// draw the landmarks on the image as white dots (image is monochrome)
-//		stasm_force_points_into_image(landmarks, img.cols, img.rows);
-//	
-//    for (int i = 0; i < stasm_NLANDMARKS; i++)
-//	    circle(displayImage, cv::Point(cvRound(landmarks[i * 2]), cvRound(landmarks[i * 2 + 1])), 1, cv::Scalar(255, 255, 255), 1);
-//	
-//	//facial.getEyeMouthPosition(frame,landmarks);
-
-//	rectangle(displayImage, face, cv::Scalar(0, 0, 255), 2, 8);    //正常驾驶状态下的人脸  可打开
-//	//rectangle(displayImage, facial.leftEyeRect, cv::Scalar(0, 0, 255), 2, 8);
-//	//rectangle(displayImage, facial.rightEyeRect, cv::Scalar(0, 0, 255), 2, 8);
-//	//rectangle(displayImage, facial.mouthRect, cv::Scalar(0, 0, 255), 2, 8);
-
-//	ObjectDetect object;
-//	object.eyemouthdetect(frame,landmarks);
-
-//	Rect leftEyeBox = runCMT(leftEyeCMT, frame(face), Rect(object.leftEyeRect.x - face.x, object.leftEyeRect.y - face.y, object.leftEyeRect.width, object.leftEyeRect.height), frameNum);
-//	Rect rightEyeBox = runCMT(rightEyeCMT, frame(face), Rect(object.rightEyeRect.x - face.x, object.rightEyeRect.y - face.y, object.rightEyeRect.width, object.rightEyeRect.height), frameNum);//Rect(faceCMT.x, faceCMT.y, faceCMT.width / 2, faceCMT.height / 2)
-//	Rect mouthBox = runCMT(mouthCMT, frame(face), Rect(object.mouthRect.x - face.x, object.mouthRect.y - face.y, object.mouthRect.width, object.mouthRect.height), frameNum);
-//	mapRect(face, leftEyeBox);
-//	mapRect(face, rightEyeBox);
-//	mapRect(face, mouthBox);
-//	rectangle(displayImage, leftEyeBox, cv::Scalar(0, 0, 255), 2, 8);
-//	rectangle(displayImage, rightEyeBox, cv::Scalar(0, 0, 255), 2, 8);
-//	rectangle(displayImage, mouthBox, cv::Scalar(0, 0, 255), 2, 8);
-
-//	if (initFaceNum <= 100)
-//	{
-//		x1 += faceBox.x;
-//		y1 += faceBox.y;
-//		width1 += faceBox.width;
-//		height1 += faceBox.height;
-//	}
-//	if (initFaceNum == 101)
-//	{
-//		srcFace.x = x1 / 100;
-//		srcFace.y = y1 / 100;
-//		srcFace.width = width1 / 100;
-//		srcFace.height = height1 / 100;
-//	}
-
-//}else  //检测不到人脸
-//{
-//	continue;								
-//}
