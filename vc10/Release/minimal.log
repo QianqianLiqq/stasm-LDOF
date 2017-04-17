@@ -1,0 +1,65 @@
+﻿生成启动时间为 2017/4/16 15:06:05。
+     1>项目“E:\人脸对齐文献\stasm+LDOF\vc10\minimal.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IE:/OpenCV2.4.0/build/include /I../stasm /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\apps\minimal.cpp ..\stasm\asm.cpp ..\stasm\classicdesc.cpp ..\stasm\convshape.cpp ..\stasm\err.cpp ..\stasm\eyedet.cpp ..\stasm\eyedist.cpp ..\stasm\faceroi.cpp ..\stasm\hat.cpp ..\stasm\hatdesc.cpp ..\stasm\landmarks.cpp ..\stasm\misc.cpp ..\stasm\MOD_1\facedet.cpp ..\stasm\MOD_1\initasm.cpp ..\stasm\pinstart.cpp ..\stasm\print.cpp ..\stasm\shape17.cpp ..\stasm\shapehacks.cpp ..\stasm\shapemod.cpp ..\stasm\startshape.cpp ..\stasm\stasm.cpp ..\stasm\stasm_lib.cpp
+         minimal.cpp
+         asm.cpp
+         classicdesc.cpp
+         convshape.cpp
+         err.cpp
+         eyedet.cpp
+         eyedist.cpp
+         faceroi.cpp
+     1>..\stasm\faceroi.cpp(189): warning C4018: “<”: 有符号/无符号不匹配
+         hat.cpp
+         hatdesc.cpp
+         landmarks.cpp
+         misc.cpp
+         facedet.cpp
+     1>..\stasm\MOD_1\facedet.cpp(212): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>..\stasm\MOD_1\facedet.cpp(213): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>..\stasm\MOD_1\facedet.cpp(214): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>..\stasm\MOD_1\facedet.cpp(215): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>..\stasm\MOD_1\facedet.cpp(220): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>..\stasm\MOD_1\facedet.cpp(221): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+         initasm.cpp
+         pinstart.cpp
+         print.cpp
+         shape17.cpp
+         shapehacks.cpp
+         shapemod.cpp
+         startshape.cpp
+         正在编译...
+         stasm.cpp
+         stasm_lib.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\人脸对齐文献\stasm+LDOF\vc10\\minimal.exe" /INCREMENTAL:NO /NOLOGO opencv_calib3d2411.lib opencv_contrib2411.lib opencv_core2411.lib opencv_features2d2411.lib opencv_flann2411.lib opencv_gpu2411.lib opencv_highgui2411.lib opencv_imgproc2411.lib opencv_legacy2411.lib opencv_ml2411.lib opencv_nonfree2411.lib opencv_objdetect2411.lib opencv_ocl2411.lib opencv_photo2411.lib opencv_stitching2411.lib opencv_superres2411.lib opencv_ts2411.lib opencv_video2411.lib opencv_videostab2411.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\人脸对齐文献\stasm+LDOF\vc10\\minimal.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\人脸对齐文献\stasm+LDOF\vc10\\minimal.lib" /MACHINE:X86 /SAFESEH Release\minimal.obj
+         Release\asm.obj
+         Release\classicdesc.obj
+         Release\convshape.obj
+         Release\err.obj
+         Release\eyedet.obj
+         Release\eyedist.obj
+         Release\faceroi.obj
+         Release\hat.obj
+         Release\hatdesc.obj
+         Release\landmarks.obj
+         Release\misc.obj
+         Release\facedet.obj
+         Release\initasm.obj
+         Release\pinstart.obj
+         Release\print.obj
+         Release\shape17.obj
+         Release\shapehacks.obj
+         Release\shapemod.obj
+         Release\startshape.obj
+         Release\stasm.obj
+         Release\stasm_lib.obj
+         正在生成代码
+         已完成代码的生成
+         minimal.vcxproj -> E:\人脸对齐文献\stasm+LDOF\vc10\\minimal.exe
+     1>已完成生成项目“E:\人脸对齐文献\stasm+LDOF\vc10\minimal.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:40.23
